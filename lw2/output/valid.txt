@@ -1,0 +1,13 @@
+http://links.qatl.ru/ 200
+http://links.qatl.ru/work.html 200
+http://links.qatl.ru/contact.html 200
+http://links.qatl.ru/pricing.html 200
+http://links.qatl.ru/blog.html 200
+http://links.qatl.ru/blog-single.html 200
+http://links.qatl.ru/about.html 200
+http://links.qatl.ru/index.html 200
+http://links.qatl.ru/links/movedper.php 301
+http://links.qatl.ru/links/found302.php 302
+http://links.qatl.ru/links/no204content.php 204
+Quantity: 11
+Mon Sep 26 2022
