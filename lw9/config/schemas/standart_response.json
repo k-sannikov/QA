@@ -1,0 +1,20 @@
+{
+    "type": "object",
+    "required": [
+        "status"
+    ],
+    "properties": {
+        "status": {
+            "type": "integer",
+            "enum": [
+                0,
+                1
+            ]
+        },
+        "id": {
+            "format": "id",
+            "type": "integer"
+        }
+    },
+    "additionalProperties": false
+}

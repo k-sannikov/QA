@@ -1,0 +1,59 @@
+{
+    "valid_product": {
+        "category_id": "2",
+        "title": "Taciti sociosqu ad litora",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": "400",
+        "old_price": "100",
+        "status": "1",
+        "keywords": "urna nec elit pulvinar",
+        "description": "Quisque imperdiet scelerisque massa eu auctor. Vivamus eleifend mattis diam.",
+        "hit": "1"
+    },
+    "valid_product_for_upd": {
+        "category_id": "3",
+        "title": "New title",
+        "content": "New content",
+        "price": "500",
+        "old_price": "200",
+        "status": "0",
+        "keywords": "New keywords",
+        "description": "New description",
+        "hit": "0"
+    },
+    "invalid_product": {
+        "category_id": "99",
+        "title": 123,
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": "400",
+        "old_price": "100",
+        "status": "1",
+        "keywords": "urna nec elit pulvinar",
+        "description": "Quisque imperdiet scelerisque massa eu auctor. Vivamus eleifend mattis diam.",
+        "hit": "1"
+    },
+    "invalid_product_for_upd": {
+        "category_id": "28",
+        "title": "New title",
+        "content": "New content",
+        "price": "500",
+        "old_price": "200",
+        "status": null,
+        "keywords": 321,
+        "description": "New description",
+        "hit": "0"
+    },
+    "nonexistent_product": {
+        "id": "0",
+        "category_id": "3",
+        "title": "New title",
+        "content": "New content",
+        "price": "500",
+        "old_price": "200",
+        "status": "0",
+        "keywords": "New keywords",
+        "description": "New description",
+        "hit": "0"
+    },
+    "empty_product": {}
+}

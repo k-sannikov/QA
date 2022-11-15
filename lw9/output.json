@@ -1,0 +1,112 @@
+
+> lw9@1.0.0 test
+> mocha --require ts-node/register --require dotenv/config ./tests/**/*.test.ts
+
+
+
+  Магазин
+    √ успешное получение всех товаров (1286ms)
+    √ успешное создание нового продукта (2402ms)
+    √ успешное удаление продукта по id (3453ms)
+    √ успешное редактирование существующего продукта (4744ms)
+    1) неуспешное создание товара с невалидными данными
+    2) неуспешное создание товара с пустыми данными
+    3) неуспешное редактирование товара невалидными данными
+    √ неуспешное редактирование товара пустыми данными (2339ms)
+    √ неуспешное редактирование несуществующего товара (2290ms)
+    4) неуспешное удаление несуществующего товара
+
+
+  6 passing (31s)
+  4 failing
+
+  1) Магазин
+       неуспешное создание товара с невалидными данными:
+
+      AssertionError [ERR_ASSERTION]: статус ответа сервера 'успех'
+      + expected - actual
+
+      -false
+      +true
+      
+      at Suite.<anonymous> (tests\shop.test.ts:94:5)
+      at Generator.next (<anonymous>)
+      at fulfilled (tests\shop.test.ts:5:58)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+  2) Магазин
+       неуспешное создание товара с пустыми данными:
+
+      AssertionError [ERR_ASSERTION]: Ошибка при проверке ответа: {
+  "validationErrors": [
+    {
+      "instancePath": "",
+      "schemaPath": "#/type",
+      "keyword": "type",
+      "params": {
+        "type": "object"
+      },
+      "message": "must be object",
+      "schema": "object",
+      "parentSchema": {
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "properties": {
+          "status": {
+            "type": "integer",
+            "enum": [
+              0,
+              1
+            ]
+          },
+          "id": {
+            "format": "id",
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "data": "<!doctype html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Ошибка</title>\r\n</head>\r\n<body>\r\n\r\n<h1>Произошла ошибка</h1>\r\n<p><b>Код ошибки:</b> Исключение</p>\r\n<p><b>Текст ошибки:</b> SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'title' cannot be null</p>\r\n<p><b>Файл, в котором произошла ошибка:</b> C:\\Bitnami\\redmine-4.0.4-5\\apache2\\htdocs\\shopapi\\vendor\\gabordemooij\\redbean\\RedBeanPHP\\Driver\\RPDO.php</p>\r\n<p><b>Строка, в которой произошла ошибка:</b> 186</p>\r\n\r\n</body>\r\n</html>"
+    }
+  ]
+}
+      + expected - actual
+
+      -false
+      +true
+      
+      at Object.validate (api\validator.ts:16:3)
+      at Suite.<anonymous> (tests\shop.test.ts:101:5)
+      at Generator.next (<anonymous>)
+      at fulfilled (tests\shop.test.ts:5:58)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+  3) Магазин
+       неуспешное редактирование товара невалидными данными:
+
+      AssertionError [ERR_ASSERTION]: статус ответа сервера 'успех'
+      + expected - actual
+
+      -false
+      +true
+      
+      at Suite.<anonymous> (tests\shop.test.ts:124:5)
+      at Generator.next (<anonymous>)
+      at fulfilled (tests\shop.test.ts:5:58)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+  4) Магазин
+       неуспешное удаление несуществующего товара:
+     TypeError: Cannot read properties of null (reading 'id')
+      at Suite.<anonymous> (tests\shop.test.ts:148:79)
+      at Generator.next (<anonymous>)
+      at D:\Учеба\[ПГТУ]\3 курс\ТиОПО\lw9\tests\shop.test.ts:8:71
+      at new Promise (<anonymous>)
+      at __awaiter (tests\shop.test.ts:4:12)
+      at Context.<anonymous> (tests\shop.test.ts:147:63)
+      at processImmediate (node:internal/timers:466:21)
+
+
+
