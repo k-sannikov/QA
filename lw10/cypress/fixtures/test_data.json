@@ -1,0 +1,33 @@
+{
+  "base_url": "http://shop.qatl.ru/",
+  "cart_url": "cart/view",
+  "login_url": "user/login",
+  "category_casio_url": "category/casio",
+  "category_men_url": "category/men",
+  "search_casio_mq_24_7bul_url": "search/?s=Casio%20MQ-24-7BUL",
+  "search_query": "casio",
+  "watch_1": {
+    "name": "Casio GA-1000-1AER",
+    "price": 400
+  },
+  "watch_2": {
+    "name": "Casio MQ-24-7BUL",
+    "price": 70
+  },
+  "watch_3": {
+    "name": "Citizen AT0696-59E"
+  },
+  "user": {
+    "login": "admin1234",
+    "password": "password"
+  },
+  "new_user": {
+    "name": "Сергей",
+    "password": "password",
+    "address": "Волгоградская область, город Талдом, ул. Ломоносова, 79",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  "authorization_message": "Вы успешно авторизованы",
+  "order_message": "Спасибо за Ваш заказ. В ближайшее время с Вами свяжется менеджер для согласования заказа",
+  "search_notification_watch_2": "Поиск по запросу \"Casio MQ-24-7BUL\""
+}
